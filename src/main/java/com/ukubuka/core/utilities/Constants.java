@@ -10,15 +10,26 @@ public final class Constants {
 
     /********************************** Reader Constants **********************************/
     public static final String DEFAULT_FILE_ENCODING = "UTF-8";
-    public static final String DEFAULT_FILE_DELIMITER = ",";
+    public static final String DEFAULT_FILE_DELIMITER = "~`~";
+    public static final String COMMON_FILE_DELIMITER = ",";
     public static final String DEFAULT_FILE_END_LINE_DELIMITER = "\n";
 
     /********************************** Parser Constants **********************************/
     public static final String EMPTY_STRING = "";
     public static final String DEFAULT_COLUMN_NAME_PREFIX = "column_";
-    public static final String DELIMITER_REPLACE_REGEX_START = "(?!\\B\"[^\"]*)";
-    public static final String DELIMITER_REPLACE_REGEX_END = "(?![^\"]*\"\\B)";
 
     /******************************* Transformer Constants ********************************/
     public static final String COLUMN_ENCOLSING_QUOTE = "\"";
+    public static final String SHORTCUT_MAP_DELIMITER = "=";
+
+    /****************************** Scripts Reader Constants ******************************/
+    public static final String CONTENT_TAG = "$$$CONTENT$$$";
+    public static final String FORWARD_SLASH = "/";
+    public static final String OPENING_BRACKET = "<";
+    public static final String CLOSING_BRACKET = ">";
+
+    /******************************** Private Constructor *********************************/
+    private Constants() {
+        /* Do Nothing */
+    }
 }
